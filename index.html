@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Holiday Villa Maldives · L. Kalaidhoo, Laamu Atoll</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--pri:#0A2540;--sec:#00A896;--acc:#F4A261;--bg:#FDFBF7;--sf:#fff;--tx:#0A2540;--mu:#5b6b7c;--bd:#E5E7EB;--hd:#0A2540;--sh:0 8px 30px rgba(10,37,64,.10);--r:16px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#071a2e;--sf:#0d2a47;--tx:#f1ede4;--mu:#9fb2c4;--bd:#1d3d5e;--hd:#f1ede4;--sh:0 8px 30px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#071a2e;--sf:#0d2a47;--tx:#f1ede4;--mu:#9fb2c4;--bd:#1d3d5e;--hd:#f1ede4;--sh:0 8px 30px rgba(0,0,0,.4)}
+*{box-sizing:border-box}html{scroll-padding-top:70px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.6 "Plus Jakarta Sans",Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;color:var(--hd);line-height:1.15;margin:0 0 .5em}
+h2{font-size:clamp(1.7rem,4vw,2.4rem)}h3{font-size:1.25rem}p{margin:0 0 1em;max-width:68ch}
+a{color:var(--sec)}button,select,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd)}
+.bar{max-width:1180px;margin:auto;padding:8px 16px;display:flex;align-items:center;gap:10px}
+.logo{font:700 1.2rem "Playfair Display",serif;color:var(--hd);text-decoration:none;margin-right:auto}
+.logo b{color:var(--sec)}
+nav{display:flex;gap:2px}nav a{padding:10px 12px;text-decoration:none;color:var(--tx);font-size:.92rem;min-height:44px;display:flex;align-items:center;white-space:nowrap;transition:color .2s,transform .2s}
+nav a.on{font-weight:700}nav a:hover{color:var(--sec);transform:scale(1.12)}
+.pill{border:0;background:none;border-radius:0;padding:0 8px;min-height:44px;display:flex;align-items:center;cursor:pointer;gap:6px;white-space:nowrap;transition:color .2s,transform .2s}.pill:hover{color:var(--sec);transform:scale(1.12)}#cur{width:auto;font-size:.75rem;min-height:32px;padding:0 2px;border:0;border-radius:0;background:none}.pill option{background:var(--sf);color:var(--tx)}
+#menu{display:none}
+@media(max-width:900px){#menu{display:flex}nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--bg);padding:8px 16px;border-bottom:1px solid var(--bd)}nav.open{display:flex}}
+.hero{position:relative;overflow:hidden;color:#fff;display:flex;align-items:flex-end;min-height:46vh;background:linear-gradient(180deg,#f9c98a 0%,#7fd6d0 38%,#00A896 62%,#0A2540 100%);transition:min-height .5s}
+.hero.big{min-height:86vh}
+.sun{position:absolute;right:14%;top:14%;width:clamp(90px,16vw,200px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#fff6dd,#F4A261 70%);box-shadow:0 0 120px 40px rgba(244,162,97,.55);animation:rise 2.2s ease-out both}
+@keyframes rise{from{transform:translateY(60px);opacity:0}}
+.waves{position:absolute;left:0;bottom:0;width:200%;height:90px;animation:drift 18s linear infinite}
+@keyframes drift{to{transform:translateX(-50%)}}
+.hc{position:relative;z-index:2;max-width:1180px;width:100%;margin:auto;padding:90px 16px 110px;text-shadow:0 2px 18px rgba(10,37,64,.45)}
+.hero h1{color:#fff;font-size:clamp(2.2rem,6.5vw,4.6rem);max-width:15ch}
+.hero p{font-size:1.1rem;color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 12px;border:0;border-radius:0;background:none;color:var(--hd);font-weight:700;cursor:pointer;text-decoration:none;text-shadow:none;white-space:nowrap;transition:color .2s,transform .2s}
+.btn:hover{color:var(--sec);transform:scale(1.15)}.btn:disabled{opacity:.45;cursor:not-allowed}.btn:disabled:hover{color:var(--hd);transform:none}
+.hero .btn{color:#fff;padding:0;text-shadow:0 2px 18px rgba(10,37,64,.45)}.hero .btn:hover{color:var(--acc)}
+main{max-width:1180px;margin:auto;padding:0 16px 80px}
+.page{display:none;padding-top:48px}.page.on{display:block}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:var(--r);padding:22px;box-shadow:var(--sh)}
+.card .ic{font-size:1.8rem}
+.qb{position:relative;z-index:3;margin:-56px auto 0;max-width:1000px;background:var(--sf);border:1px solid var(--bd);border-radius:var(--r);box-shadow:var(--sh);padding:18px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));align-items:end}
+.qb[hidden]{display:none}
+label{display:grid;gap:4px;font-size:.82rem;color:var(--mu);font-weight:500}
+input,select,textarea{background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;min-height:44px;width:100%}
+.badge{display:inline-block;background:var(--acc);color:#0A2540;border-radius:99px;font-size:.75rem;font-weight:700;padding:2px 10px}
+.room{display:grid;grid-template-columns:160px 1fr auto;gap:18px;align-items:center}
+.room .ph{height:120px;border-radius:12px}
+@media(max-width:700px){.room{grid-template-columns:1fr}.room .ph{height:140px}}
+.price{font:700 1.6rem "Playfair Display",serif;color:var(--hd)}.old{text-decoration:line-through;color:var(--mu);font-size:.9rem}
+.left{font-size:.85rem;font-weight:700;color:var(--sec)}.left.low{color:#d9692b}.left.none{color:var(--mu)}
+.steps{border-left:3px solid var(--sec);margin:0 0 24px 12px;padding:0}
+.steps li{list-style:none;position:relative;padding:0 0 28px 28px}.steps li:before{content:"";position:absolute;left:-11px;top:6px;width:19px;height:19px;border-radius:50%;background:var(--acc);border:4px solid var(--bg)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:24px 0}
+.facts div{background:var(--pri);color:#fff;border-radius:var(--r);padding:16px}.facts b{display:block;font:700 1.8rem "Playfair Display",serif;color:var(--acc)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:10px;font-size:.8rem;text-align:center;max-width:420px}
+.cal span{border-radius:8px;padding:6px 0;background:var(--bg)}.cal .f{background:var(--sec);color:#fff}.cal .x{background:var(--bd);color:var(--mu);text-decoration:line-through}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--pri);color:#fff;padding:14px 22px;border-radius:99px;display:none;z-index:50;max-width:92vw}
+footer{background:var(--pri);color:#cfe3ee;text-align:center;padding:32px 16px}
+.ugc{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}.ugc figure{margin:0;position:relative;aspect-ratio:1;border-radius:12px;overflow:hidden;background:var(--sf);border:1px solid var(--bd)}.ugc img{width:100%;height:100%;object-fit:cover;display:block}.ugc figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 10px 8px;font-size:.8rem;color:#fff;background:linear-gradient(transparent,rgba(10,37,64,.85))}.ugc-tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}.ugc-tools input{max-width:230px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="logo" href="#home">Holiday <b>Villa</b></a>
+<nav id="nav" aria-label="Main">
+<a href="#home">Home</a><a href="#destination">Destination</a><a href="#getting">Getting here</a><a href="#todo">What to do</a><a href="#book">Book</a><a href="#contact">Contact</a></nav>
+<button class="pill" id="temp" title="Typical Laamu Atoll temperature for this month and hour. Tap to switch °C/°F"></button>
+<select class="pill" id="cur" aria-label="Currency"><option>USD</option><option>MVR</option></select>
+<button class="pill" id="theme" aria-label="Toggle dark mode">🌙</button>
+<button class="pill" id="menu" aria-label="Menu">☰</button>
+</div></header>
+
+<div class="hero big" id="hero">
+<div class="sun"></div>
+<svg class="waves" viewBox="0 0 1600 90" preserveAspectRatio="none"><path fill="#0A2540" fill-opacity=".35" d="M0 40c100-30 200 30 400 0s300-30 400 0 300 30 400 0 200-20 400 0v50H0z"/><path fill="var(--bg)" d="M0 60c100-25 200 25 400 0s300-25 400 0 300 25 400 0 200-15 400 0v30H0z"/></svg>
+<div class="hc"><h1 id="h1"></h1><p id="hp"></p><a class="btn" id="hcta" href="#book">Check availability</a></div>
+</div>
+
+<main>
+<div class="qb" id="qb" hidden>
+<label>Check-in<input type="date" id="q-in"></label>
+<label>Check-out<input type="date" id="q-out"></label>
+<label>Guests<select id="q-g"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option></select></label>
+<button class="btn" id="q-go">Check availability</button>
+</div>
+
+<section class="page" id="p-home">
+<h2>Barefoot luxury on a real island</h2>
+<p>Eight boutique rooms on L. Kalaidhoo, Laamu Atoll. Walk to a 428 m house reef, surf the Yin Yang break, and eat with local hosts, without resort prices.</p>
+<div class="grid" style="margin:28px 0">
+<div class="card"><div class="ic">🐢</div><h3>Pristine nature</h3><p>Turtles, rays and a living house reef drop-off steps from your door.</p></div>
+<div class="card"><div class="ic">🛁</div><h3>Uncomplicated luxury</h3><p>Air-conditioned rooms, open-air stone showers, teak furnishings and Starlink Wi-Fi at 25+ Mbps.</p></div>
+<div class="card"><div class="ic">🤝</div><h3>Book direct, pay less</h3><p>No agent fees. Rates are 15% below online travel agents, with airport transfers arranged for you.</p></div>
+</div>
+<h2>Our rooms</h2><div class="grid" id="rooms-prev"></div>
+<div class="facts"><div><b>8</b>boutique rooms</div><div><b>428 m</b>house reef</div><div><b>25+ Mbps</b>Starlink Wi-Fi</div><div><b>4.9 / 5</b>guest rating</div></div>
+<h2 style="margin-top:56px">#laamuatoll</h2>
+<p>Guests share the atoll on Instagram with this tag. Add your own photo to the wall below, then post it on Instagram with <b>#laamuatoll</b>.</p>
+<div class="ugc-tools"><a class="btn" href="https://www.instagram.com/explore/tags/laamuatoll/" target="_blank" rel="noopener">View #laamuatoll on Instagram</a>
+<input id="ugc-h" placeholder="@yourhandle" aria-label="Instagram handle"><input id="ugc-c" placeholder="Caption" aria-label="Caption">
+<label class="btn" for="ugc-file" tabindex="0" style="font-size:1rem;color:var(--hd)" onkeydown="if(event.key==='Enter')document.getElementById('ugc-file').click()">Add your photo</label><input type="file" id="ugc-file" accept="image/*" hidden></div>
+<div class="ugc" id="ugc"></div>
+<p style="font-size:.82rem;color:var(--mu);margin-top:12px">Photos you add here are saved on this device only. Tag them #laamuatoll on Instagram to share them with everyone.</p>
+</section>
+
+<section class="page" id="p-destination">
+<h2>L. Kalaidhoo, Laamu Atoll</h2>
+<p>A quiet inhabited island where fishing boats, evening football and friendly neighbours set the pace. You stay among the community, not behind a resort fence.</p>
+<div class="grid">
+<div class="card"><h3>House reef</h3><p>A 428 m living reef with a sharp drop-off. Snorkel gear and a dive rinse station are included.</p></div>
+<div class="card"><h3>Yin Yang surf break</h3><p>One of Laamu's best-known waves. Board storage on site; we help arrange boat trips and check swell.</p></div>
+<div class="card"><h3>Sandbanks</h3><p>Isolated white-sand banks for private picnics, reachable by local dhoni.</p></div>
+<div class="card"><h3>Bikini Beach</h3><p>A two-minute stroll from the Sunset Villa for swimming and sunsets.</p></div>
+</div>
+<div class="card" style="margin-top:28px;background:linear-gradient(135deg,#F4A261,#00A896 55%,#0A2540);border:0"><h3 style="color:#fff">Laamu Atoll on Instagram</h3><p style="color:#fff">See what guests and locals are posting right now: reef dives, Yin Yang waves, sandbank sunsets and island life.</p><a class="btn" style="color:#fff;padding:0" href="https://www.instagram.com/explore/tags/laamuatoll/" target="_blank" rel="noopener">Browse #laamuatoll</a> <a class="btn" style="color:#fff" href="https://www.instagram.com/explore/tags/laamu/" target="_blank" rel="noopener">#laamu</a> <a class="btn" style="color:#fff" href="https://www.instagram.com/explore/tags/kalaidhoo/" target="_blank" rel="noopener">#kalaidhoo</a></div>
+<div class="facts"><div><b>Dec–Apr</b>dry season, calm seas</div><div><b>May–Nov</b>surf swell, green season</div><div><b>~29–31°C</b>all year</div><div><b>UTC+5</b>Maldives time</div></div>
+</section>
+
+<section class="page" id="p-getting">
+<h2>Getting here</h2>
+<p>We coordinate the whole journey. Send your flight details when you book and we'll meet you on arrival.</p>
+<ol class="steps">
+<li><h3>Fly to Velana International (MLE)</h3><p>Land in Malé on your international flight.</p></li>
+<li><h3>Domestic flight to Kadhdhoo (KDO)</h3><p>A scenic atoll flight of about 35 minutes.</p></li>
+<li><h3>Ride to Holiday Villa</h3><p>About 20 minutes by coastal causeway or speedboat. Your host meets you at the airport.</p></li>
+</ol>
+<div class="card"><h3>Transfer price</h3><p class="price" id="xfer"></p><p>Per person, round trip, Malé to Holiday Villa. Add it during booking.</p></div>
+</section>
+
+<section class="page" id="p-todo">
+<h2>What to do</h2>
+<div class="grid">
+<div class="card"><div class="ic">🤿</div><h3>Snorkel the house reef</h3><p>Fins and masks are free. Go at high tide for the best visibility.</p></div>
+<div class="card"><div class="ic">🎣</div><h3>Night hand-line fishing</h3><p>Fish the traditional way, then cook your catch at a beach BBQ.</p></div>
+<div class="card"><div class="ic">🐬</div><h3>Sunset dolphin safari</h3><p>Spinner dolphins ride the bow of a wooden dhoni at dusk.</p></div>
+<div class="card"><div class="ic">🏄</div><h3>Surf Yin Yang</h3><p>Boat trips to the break, plus board storage at the guesthouse.</p></div>
+<div class="card"><div class="ic">🏝️</div><h3>Sandbank picnic</h3><p>A private strip of sand, fresh fruit and no one else.</p></div>
+<div class="card"><div class="ic">🍽️</div><h3>Island dining</h3><p>Mashuni breakfast, line-caught fish, Halal and Continental menus.</p></div>
+</div>
+</section>
+
+<section class="page" id="p-book">
+<h2>Book direct</h2>
+<div class="card" style="margin-bottom:20px"><div class="grid">
+<label>Check-in<input type="date" id="b-in"></label><label>Check-out<input type="date" id="b-out"></label>
+<label>Guests<select id="b-g"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option></select></label></div>
+<p id="b-msg" style="margin:12px 0 0;color:var(--mu)"></p></div>
+<div id="results" class="grid" style="grid-template-columns:1fr"></div>
+<div class="card" id="checkout" hidden style="margin-top:20px">
+<h3 id="co-t"></h3>
+<div class="grid"><label>Full name<input id="n" autocomplete="name"></label><label>Email or WhatsApp<input id="e"></label></div>
+<label style="margin:12px 0">Airport transfer (<span id="xf2"></span> per person)<select id="xf"><option value="0">No transfer</option><option value="1">Add transfer</option></select></label>
+<button class="btn alt" id="confirm">Confirm reservation</button><p id="co-err" style="color:#d9692b"></p></div>
+<div class="card" id="done" hidden style="margin-top:20px"><h3>Reservation confirmed</h3><p id="done-t"></p></div>
+<h3 style="margin-top:36px">Availability this month</h3>
+<label style="max-width:300px">Room<select id="cal-room"></select></label><div class="cal" id="cal"></div>
+</section>
+
+<section class="page" id="p-contact">
+<h2>Contact your island host</h2>
+<div class="grid">
+<div class="card"><h3>Send an inquiry</h3>
+<label>Name<input id="c-n"></label><label>Email or WhatsApp<input id="c-e"></label>
+<label>Message<textarea id="c-m" rows="4" placeholder="Dates, surf swell, domestic flights..."></textarea></label>
+<button class="btn alt" id="c-go" style="margin-top:12px">Send inquiry</button></div>
+<div class="card"><h3>Find us</h3><p>Holiday Villa<br>L. Kalaidhoo, Laamu Atoll<br>Republic of Maldives</p><p>Local host available 24/7 for transfers and excursions.</p>
+<a class="btn" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp concierge</a></div>
+</div>
+</section>
+</main>
+<footer><b>Holiday Villa Maldives</b><br>Direct rates guaranteed · L. Kalaidhoo, Laamu Atoll</footer>
+<div id="toast" role="status"></div>
+
+<script>
+const RATE=15.42,$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const ROOMS=[
+{id:"dlx",n:"Deluxe Double Room",p:110,u:3,cap:2,d:"320 sq ft · King bed · open-air stone rain shower · Maldivian breakfast",c:["#00A896","#0A2540"]},
+{id:"twn",n:"Twin Island Room",p:125,u:2,cap:4,d:"360 sq ft · 2 Queen beds · dive gear rinse station · hammock terrace",c:["#7fd6d0","#0A2540"]},
+{id:"sun",n:"Ocean Breeze Sunset Villa",p:165,u:2,cap:2,d:"410 sq ft · Super king bed · sunset soaking tub · 2 min to Bikini Beach",c:["#F4A261","#0A2540"]},
+{id:"fam",n:"Family Coconut Suite",p:195,u:1,cap:5,d:"580 sq ft · 2 interconnecting rooms · kitchenette · private garden patio",c:["#00A896","#F4A261"]}];
+const PAGES={
+home:["Discover unspoiled paradise","Holiday Villa on L. Kalaidhoo. An authentic island escape in Laamu Atoll."],
+destination:["The island","Reef, surf and a living community."],
+getting:["Getting here","Two flights and a short ride. We arrange it."],
+todo:["What to do","From reef snorkelling to dolphin dusk."],
+book:["Book direct","Live availability. Best rate guaranteed."],
+contact:["Contact us","Ask about swell, flights or special occasions."]};
+let cur="USD",unit="C",sel=null,held={};
+const money=v=>cur==="USD"?"$"+Math.round(v).toLocaleString():"Rf "+Math.round(v*RATE).toLocaleString();
+const iso=d=>d.toISOString().slice(0,10),addD=(d,n)=>{const x=new Date(d);x.setUTCDate(x.getUTCDate()+n);return x};
+const nights=()=>Math.round((new Date($("#b-out").value)-new Date($("#b-in").value))/864e5);
+const grad=r=>`linear-gradient(135deg,${r.c[0]},${r.c[1]})`;
+function booked(r,day){let h=0;for(const ch of r.id+day)h=(h*31+ch.charCodeAt(0))>>>0;return Math.min(r.u,(h%7<3?0:h%(r.u+1))+(held[r.id+day]||0))}
+function free(r,day){return r.u-booked(r,day)}
+function avail(r,a,b){let m=r.u;for(let d=new Date(a);d<new Date(b);d=addD(d,1))m=Math.min(m,free(r,iso(d)));return m}
+function toast(t){const e=$("#toast");e.textContent=t;e.style.display="block";setTimeout(()=>e.style.display="none",3500)}
+function route(){const k=(location.hash||"#home").slice(1),pg=PAGES[k]?k:"home";
+$$(".page").forEach(p=>p.classList.toggle("on",p.id==="p-"+pg));
+$$("nav a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+pg));
+$("#hero").classList.toggle("big",pg==="home");$("#qb").hidden=pg!=="home";
+$("#h1").textContent=PAGES[pg][0];$("#hp").textContent=PAGES[pg][1];$("#hcta").style.display=pg==="book"?"none":"";
+$("#nav").classList.remove("open");scrollTo(0,0);if(pg==="book")search()}
+addEventListener("hashchange",route);
+function roomPrev(){$("#rooms-prev").innerHTML=ROOMS.map(r=>`<div class="card"><div style="height:110px;border-radius:12px;background:${grad(r)};margin-bottom:12px"></div><h3>${r.n}</h3><p style="font-size:.9rem;color:var(--mu)">${r.d}</p><b>${money(r.p)}</b> / night</div>`).join("")}
+function search(keep){const a=$("#b-in").value,b=$("#b-out").value,g=+$("#b-g").value,n=nights();
+$("#checkout").hidden=true;if(!keep)$("#done").hidden=true;sel=null;
+if(!a||!b||n<1){$("#b-msg").textContent="Choose a check-out date after check-in.";$("#results").innerHTML="";return}
+$("#b-msg").textContent=n+" night"+(n>1?"s":"")+" · "+g+" guest"+(g>1?"s":"");
+$("#results").innerHTML=ROOMS.map(r=>{const left=avail(r,a,b),ok=left>0&&g<=r.cap,low=left===1;
+return `<div class="card room"><div class="ph" style="background:${grad(r)}"></div>
+<div><h3>${r.n}</h3><p style="margin:0 0 6px;color:var(--mu);font-size:.9rem">${r.d}</p>
+<span class="left ${left===0?"none":low?"low":""}">${left===0?"Sold out for these dates":g>r.cap?"Sleeps up to "+r.cap:left+" of "+r.u+" left"+(low?" · last one":"")}</span></div>
+<div style="text-align:right"><span class="badge">Direct −15%</span><div class="old">${money(r.p/.85)} / night</div><div class="price">${money(r.p*n)}</div><div style="font-size:.8rem;color:var(--mu)">${n} nt · ${money(r.p)} / night</div>
+<button class="btn" style="margin-top:8px" data-r="${r.id}" ${ok?"":"disabled"}>Reserve</button></div></div>`}).join("")}
+function drawCal(){const r=ROOMS.find(x=>x.id===$("#cal-room").value),t=new Date(),y=t.getFullYear(),m=t.getMonth(),days=new Date(y,m+1,0).getDate();
+let h="";for(const d of"SMTWTFS")h+=`<b>${d}</b>`;h+="<i></i>".repeat(new Date(y,m,1).getDay());
+for(let i=1;i<=days;i++){const f=free(r,iso(new Date(Date.UTC(y,m,i))));h+=`<span class="${f?"f":"x"}" title="${f} left">${i}</span>`}$("#cal").innerHTML=h}
+function temp(){const mo=[29,30,30.5,31,30,30,29.5,29.5,29.5,29.5,29.5,29],now=new Date(),h=(now.getUTCHours()+5)%24;
+const c=mo[now.getUTCMonth()]-2.5+2.5*Math.max(0,Math.cos((h-14)/24*2*Math.PI)),v=unit==="C"?c:c*9/5+32;
+$("#temp").textContent="🌡 "+v.toFixed(0)+"°"+unit+" Laamu"}
+$("#nav").onclick=e=>e.target.tagName==="A"&&$("#nav").classList.remove("open");
+$("#menu").onclick=()=>$("#nav").classList.toggle("open");
+$("#temp").onclick=()=>{unit=unit==="C"?"F":"C";temp()};
+$("#cur").onchange=e=>{cur=e.target.value;roomPrev();$("#xfer").textContent=money(210);$("#xf2").textContent=money(210);if(location.hash==="#book")search(true)};
+$("#theme").onclick=()=>{const d=document.documentElement,dark=getComputedStyle(d).getPropertyValue("--bg").trim()==="#071a2e";d.dataset.theme=dark?"light":"dark";$("#theme").textContent=dark?"🌙":"☀️"};
+$("#q-go").onclick=()=>{$("#b-in").value=$("#q-in").value;$("#b-out").value=$("#q-out").value;$("#b-g").value=$("#q-g").value;location.hash="#book";route()};
+["b-in","b-out","b-g"].forEach(i=>$("#"+i).onchange=()=>search());
+$("#results").onclick=e=>{const id=e.target.dataset.r;if(!id)return;sel=ROOMS.find(r=>r.id===id);const n=nights();
+$("#co-t").textContent=sel.n+" · "+n+" nights · "+money(sel.p*n);$("#checkout").hidden=false;$("#checkout").scrollIntoView({behavior:"smooth"})};
+$("#confirm").onclick=()=>{const nm=$("#n").value.trim(),em=$("#e").value.trim();
+if(!nm||!em){$("#co-err").textContent="Enter your name and an email or WhatsApp number.";return}
+const a=$("#b-in").value,b=$("#b-out").value,n=nights(),x=+$("#xf").value*210*(+$("#b-g").value);
+for(let d=new Date(a);d<new Date(b);d=addD(d,1)){const k=sel.id+iso(d);held[k]=(held[k]||0)+1}
+const ref="HV-"+Math.random().toString(36).slice(2,7).toUpperCase(),r=sel;
+$("#co-err").textContent="";
+$("#done-t").textContent=`${nm}, your ${r.n} is held for ${a} to ${b}. Total ${money(r.p*n+x)}. Reference ${ref}. Our host will confirm by message shortly.`;
+search(true);$("#done").hidden=false;drawCal();$("#done").scrollIntoView({behavior:"smooth"})};
+$("#c-go").onclick=()=>{if(!$("#c-n").value||!$("#c-e").value)return toast("Add your name and contact details.");toast("Inquiry sent. We'll reply within a day.");["c-n","c-e","c-m"].forEach(i=>$("#"+i).value="")};
+$("#cal-room").innerHTML=ROOMS.map(r=>`<option value="${r.id}">${r.n}</option>`).join("");$("#cal-room").onchange=drawCal;
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let ugc=[];try{ugc=JSON.parse(localStorage.getItem("hv-ugc")||"[]")}catch(e){}
+function drawUgc(){$("#ugc").innerHTML=ugc.length?ugc.map(p=>`<figure><img src="${p.s}" alt="Guest photo"><figcaption>${esc(p.h)} ${esc(p.c)}</figcaption></figure>`).join(""):`<p style="grid-column:1/-1;color:var(--mu)">No photos yet. Add yours to start the wall.</p>`}
+$("#ugc-file").onchange=e=>{const f=e.target.files[0];if(!f)return;const im=new Image(),u=URL.createObjectURL(f);
+im.onload=()=>{const k=Math.min(1,640/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=im.width*k;c.height=im.height*k;c.getContext("2d").drawImage(im,0,0,c.width,c.height);URL.revokeObjectURL(u);
+let h=$("#ugc-h").value.trim();if(h&&h[0]!=="@")h="@"+h;ugc.unshift({s:c.toDataURL("image/jpeg",.75),h:h,c:$("#ugc-c").value.trim()});ugc=ugc.slice(0,12);
+try{localStorage.setItem("hv-ugc",JSON.stringify(ugc))}catch(x){toast("Photo shown now, but this device couldn't save it.")}
+drawUgc();$("#ugc-c").value="";e.target.value="";toast("Photo added. Post it on Instagram with #laamuatoll too.")};
+im.onerror=()=>toast("That file isn't a photo we can read.");im.src=u};
+drawUgc();
+const t=new Date(),dflt=[iso(addD(t,7)),iso(addD(t,10))];
+["q","b"].forEach(p=>{$("#"+p+"-in").min=$("#"+p+"-out").min=iso(t);$("#"+p+"-in").value=dflt[0];$("#"+p+"-out").value=dflt[1]});
+$("#xfer").textContent=money(210);$("#xf2").textContent=money(210);roomPrev();drawCal();temp();setInterval(temp,6e4);route();
+</script>
+</body>
+</html>
